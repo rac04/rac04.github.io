@@ -217,15 +217,13 @@ header #gnb li:hover a {
 .star_wrap li{
     margin:10rem 110px;
 }
-.star_wrap li:nth-child(1){
+.star_wrap li:nth-child(1),.star_wrap li:nth-child(3){
     margin-top:15rem;
 }
-.star_wrap li:nth-child(2){
+.star_wrap li:nth-child(2), .star_wrap li:nth-child(4){
     margin-top:7rem;
 }
-.star_wrap li:nth-child(3){
-    margin-top:18rem;
-}
+
 .star{
     
     font-size:70px;
