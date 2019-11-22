@@ -107,8 +107,8 @@ header #gnb li:hover a {
 .ground {
     position: absolute;
     background: url('../images/ground.png') no-repeat 0 0 /cover;
-    width: calc(1920px - 5rem);
-    height: calc(557px - 5rem);
+    width: calc(1920px - 20rem);
+    height: calc(557px - 4rem);
     bottom: 0;
 
 }
@@ -117,7 +117,7 @@ header #gnb li:hover a {
     position: absolute;
     background: url('../images/mat.png') no-repeat 0 0 /cover;
     width: calc(1331px - 5rem);
-    height: calc(431px - 5rem);
+    height: calc(431px - 4rem);
     bottom: 0;
 }
 
