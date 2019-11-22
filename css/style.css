@@ -203,6 +203,13 @@ header #gnb li:hover a {
     background: url('../images/background2.png')no-repeat 0 0 /cover;
 }
 
+.default {
+    width:calc(100vw - 8rem);
+    height:calc(100vh - 7rem);
+    margin: 5.5rem auto 0;
+    background: rgba(255,255,255,.5);
+}
+
 .click_top {
     position: fixed;
     width: 15px;
@@ -210,8 +217,12 @@ header #gnb li:hover a {
     top: 5rem;
     left: 50%;
     z-index: 9999;
+    opacity:.3;
+    transition: opacity 0.3s;
 }
-
+.click_top:hover{
+    opacity: 1;
+}
 .click_top.page_none {
     display: none;
 }
@@ -223,8 +234,12 @@ header #gnb li:hover a {
     bottom: 4rem;
     left: 50%;
     z-index: 9999;
+    opacity:.3;
+    transition: opacity 0.3s;
 }
-
+.click_bottom:hover{
+    opacity: 1;
+}
 .arrow_t {
     border: solid white;
     border-width: 6px 6px 0px 0;
