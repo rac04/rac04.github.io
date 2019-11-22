@@ -210,7 +210,34 @@ header #gnb li:hover a {
     background: rgba(255,255,255,.5);
     opacity: 0;
 }
-
+.star_wrap{
+    width:1200px;
+    margin: 0 auto;
+}
+.star_wrap li{
+    margin:10rem 110px;
+}
+.star_wrap li:nth-child(1){
+    margin-top:15rem;
+}
+.star_wrap li:nth-child(2){
+    margin-top:7rem;
+}
+.star_wrap li:nth-child(3){
+    margin-top:18rem;
+}
+.star{
+    
+    font-size:70px;
+    text-align: center;
+    color:rgba(255,255,255,.5);
+    margin:10rem 0 0;
+    text-shadow: 0px 0px 30px yellow;
+    transition:all 0.3s;
+}
+.star:hover{
+    transform: rotate(45deg) scale(1.5);
+}
 .click_top {
     position: fixed;
     width: 15px;

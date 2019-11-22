@@ -39,6 +39,14 @@ $(function () {
             })
         }
     });
+    var starWrap = $('.star_wrap > li');
+    var starWrapIdx = starWrap.index();
+        $(starWrap).hover(function(){
+            console.log(starWrapIdx);
+            $(this).eq(starWrapIdx).attr('class','fas fa-star star');
+        },function(){
+            console.log(starWrapIdx);
+            $(this).eq(starWrapIdx).attr('class','far fa-star star');
+        });
     
-
-});
+}); 
