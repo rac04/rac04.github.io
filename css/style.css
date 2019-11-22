@@ -208,6 +208,7 @@ header #gnb li:hover a {
     height:calc(100vh - 7rem);
     margin: 5.5rem auto 0;
     background: rgba(255,255,255,.5);
+    opacity: 0;
 }
 
 .click_top {
