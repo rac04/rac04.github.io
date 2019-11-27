@@ -51,4 +51,46 @@ $(function () {
         }
 
     })
+    $(window).scroll(function(){
+        if(count>=1 && count<=2){
+            $('#gnb > li').removeClass('gnb_click');
+            $('#gnb > li').eq(1).addClass('gnb_click');
+        }else if(count>=3 && count<=5){
+            $('#gnb > li').removeClass('gnb_click');
+            $('#gnb > li').eq(2).addClass('gnb_click');
+        }else if(count==6){
+            $('#gnb > li').removeClass('gnb_click');
+            $('#gnb > li').eq(3).addClass('gnb_click');
+        }else if(count==0){
+            $('#gnb > li').removeClass('gnb_click');
+            $('#gnb > li').eq(0).addClass('gnb_click');
+        }
+    });
+
+        $('#gnb > li').eq(0).click(function(){
+            count=0;
+        $('html,body').animate({
+            scrollTop: $next_page * count + 'px'
+        }, 400)
+        })
+        $('#gnb > li').eq(1).click(function(){
+            count=1;
+        console.log(count);
+        $('html,body').animate({
+            scrollTop: $next_page * count + 'px'
+        }, 400)
+        })
+        $('#gnb > li').eq(2).click(function(){
+            count=3;
+        $('html,body').animate({
+            scrollTop: $next_page * count + 'px'
+        }, 400)
+        })
+        $('#gnb > li').eq(3).click(function(){
+            count=6;
+        $('html,body').animate({
+            scrollTop: $next_page * count + 'px'
+        }, 400)
+        })
+
 }); 
